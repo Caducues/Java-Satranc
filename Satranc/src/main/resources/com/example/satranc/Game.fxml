@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="698.0" style="-fx-background-color: #4b4847;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.satranc.GameController">
+   <children>
+      <GridPane layoutX="49.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane fx:id="r1c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="knight" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/at.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r0c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;">
+               <children>
+                  <ImageView fx:id="rook1" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/kale.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="3">
+               <children>
+                  <ImageView fx:id="queen" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/vezir.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r2c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fx:id="bishop" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/fil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r4c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="4">
+               <children>
+                  <ImageView fx:id="king" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/sah.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r5c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="5">
+               <children>
+                  <ImageView fx:id="bishop2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/fil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r7c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="7">
+               <children>
+                  <ImageView fx:id="rook2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/kale.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r6c0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="6">
+               <children>
+                  <ImageView fx:id="knight2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/at.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r0c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r1c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r2c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn3" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r3c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn4" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r4c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn5" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r5c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn6" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r7c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn8" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r6c1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="pawn7" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/piyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r0c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r1c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r2c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r3c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r5c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r4c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r7c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r6c2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="r1c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r0c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r2c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r4c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r6c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r7c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r5c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r3c3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <AnchorPane fx:id="r1c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r3c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r5c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r7c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r0c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r2c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r4c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r6c4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <AnchorPane fx:id="r1c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r3c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r5c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r7c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r0c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r2c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r4c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r6c5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <AnchorPane fx:id="r1c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r3c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn4" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r5c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn6" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r7c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn8" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r0c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r2c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn3" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r4c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn5" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r6c6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="wpawn7" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bpiyon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r1c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wknight" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r3c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wqueen" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bvezir.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r5c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wbishop2" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bfil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r7c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeed2;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wrook" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bkale.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r0c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wrook" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bkale.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r2c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wbishop" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bfil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r4c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wking" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bsah.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="r6c7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #769656;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <children>
+                  <ImageView fx:id="wknight" fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@img/bat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
