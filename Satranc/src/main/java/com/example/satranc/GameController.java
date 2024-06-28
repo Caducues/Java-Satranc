@@ -12,10 +12,6 @@ import javafx.fxml.FXML;
 import javafx.scene.input.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
-
-import java.net.URL;
-import java.util.Arrays;
-import java.util.ResourceBundle;
 import java.util.logging.Handler;
 
 public class GameController {
@@ -298,66 +294,5 @@ public class GameController {
 
     @FXML
     private ImageView wrook;
-
-    private double initialX;
-    private double initialY;
-    private double[][] Tahta;
-    public void initialize()
-    {
-        MakeDragger();
-        tahtayiHazirla();
-    }
-
-    private static void tahtayiHazirla() {
-        double[][][] array = new double[8][8][2];
-
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                double x = j * 75;
-                double y = i * 75;
-                array[i][j][0] = x;
-                array[i][j][1] = y;
-
-                System.out.println("Coordinate (" + i + ", " + j + "): (" + x + ", " + y + ")");
-            }
-        }
-
-        // Diziyi yazdırma
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                System.out.print("[" + array[i][j][0] + ", " + array[i][j][1] + "] ");
-            }
-            System.out.println();
-        }
-    }
-
-    private void starterDragger()
-    {
-        wrook.setOnMousePressed(event ->
-        {
-            initialX = event.getSceneX() - wrook.getTranslateX();
-            initialY = event.getSceneY() - wrook.getTranslateY();
-        });
-    }
-    private void endedDragger() {
-
-        wrook.setOnMouseDragged(event -> {
-            wrook.setTranslateX(event.getSceneX() - initialX);
-            wrook.setTranslateY(event.getSceneY() - initialY);
-           double maxY = event.getSceneY() - 75;
-           double maxX = event.getSceneX() - 75;
-            System.out.println("maxY: " + maxY);
-            System.out.println("maxX: " + maxX);
-        });
-    }
-
-
-    public void MakeDragger()
-    {
-        starterDragger();
-        endedDragger();
-    }
-
-
 
 }
